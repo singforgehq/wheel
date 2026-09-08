@@ -249,6 +249,14 @@
         "icon": "stockmock",
         "url": "https://www.stockmock.in/#!/",
         "label": "Stockmock"
+      },
+      {
+        "id": 1788878273288,
+        "label": "ubiquitous ",
+        "url": "https://ubiquitous-guide-rho.vercel.app/",
+        "icon": "link",
+        "img": null,
+        "children": null
       }
     ]
   },
