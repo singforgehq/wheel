@@ -7,19 +7,19 @@ import * as THREE from 'three';
 
 // 1. GENERIC PLANET TEXTURES (Your Exact List)
 const PLANET_TEXTURES = [
-    "/mymenu-yt/textures/one.jpg",
-    "/mymenu-yt/textures/02.png",   // .png
-    "/mymenu-yt/textures/03.jpeg",  // .jpeg
-    "/mymenu-yt/textures/04.jpg",
-    "/mymenu-yt/textures/05.jpg",
-    "/mymenu-yt/textures/06.jpg",
-    "/mymenu-yt/textures/07.jpg",
-    "/mymenu-yt/textures/08.jpg",
-    "/mymenu-yt/textures/09.jpeg"   // .jpeg
+    "/wheel/textures/one.jpg",
+    "/wheel/textures/02.png",   // .png
+    "/wheel/textures/03.jpeg",  // .jpeg
+    "/wheel/textures/04.jpg",
+    "/wheel/textures/05.jpg",
+    "/wheel/textures/06.jpg",
+    "/wheel/textures/07.jpg",
+    "/wheel/textures/08.jpg",
+    "/wheel/textures/09.jpeg"   // .jpeg
 ];
 
 // 2. FALLBACK IMAGE (Prevents white screen/crash if a specific logo is missing)
-const PLACEHOLDER_LOGO = "/mymenu-yt/logos/placeholder.png"; 
+const PLACEHOLDER_LOGO = "/wheel/logos/placeholder.png"; 
 
 // --- COMPONENT: THE SUN (Center Button) ---
 function Sun({ onReset }) {
@@ -56,7 +56,7 @@ function Planet({ item, index, total, radiusX, radiusZ, onClick, isChild }) {
     if (isChild && item.label) {
         // Example: "AI Tools" -> "ai_tools.png"
         const filename = item.label.toLowerCase().replace(/[^a-z0-9]/g, '_') + '.png';
-        idealPath = `/mymenu-yt/logos/${filename}`;
+        idealPath = `/wheel/logos/${filename}`;
     } else {
         // Main planets use generic textures from your list
         idealPath = PLANET_TEXTURES[index % PLANET_TEXTURES.length];
