@@ -6,8 +6,8 @@ import Navbar from './components/Navbar';
 import './App.css';
 import initialData from './data.json';
 
-const GITHUB_OWNER = 'singhaidotnish';
-const GITHUB_REPO = 'mymenu-yt';
+const GITHUB_OWNER = 'singforgehq';
+const GITHUB_REPO = 'wheel';
 const GITHUB_FILE_PATH = 'src/data.json';
 
 function App() {
