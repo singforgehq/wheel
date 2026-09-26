@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/mymenu-yt/",
+  base: "/wheel/",
   server: {
     headers: {
       "X-Frame-Options": "ALLOWALL",
